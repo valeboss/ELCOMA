@@ -1,1 +1,7 @@
 test.html
+
+# dartlang specific
+.packages
+pubspec.lock
+.pub
+packages
