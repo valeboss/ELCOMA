@@ -1,5 +1,5 @@
 # Electronic Components Manager
-An application for managing electronic components in a KiCad project.
+An application for managing electronic components in a [KiCad](http://kicad-pcb.org/) project.
 
 ## Getting Started
 To build the application you need to follow the following instructions. 
