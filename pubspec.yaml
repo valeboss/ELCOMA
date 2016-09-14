@@ -1,4 +1,4 @@
-name: ELCOMA
+name: elcoma
 description: 'An application for managing electronic components easily.'
 version: 0.0.1
 environment:

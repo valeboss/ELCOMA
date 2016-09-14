@@ -1,0 +1,27 @@
+<style is="custom-style">
+  paper-radio-button.red {
+    --paper-radio-button-checked-color: var(--paper-red-500);
+    --paper-radio-button-checked-ink-color: var(--paper-red-500);
+    --paper-radio-button-unchecked-color: var(--paper-red-900);
+    --paper-radio-button-unchecked-ink-color: var(--paper-red-900);
+    --paper-radio-button-label-color: var(--paper-red-500);
+  }
+  paper-radio-button.green {
+    --paper-radio-button-checked-color: var(--paper-green-500);
+    --paper-radio-button-checked-ink-color: var(--paper-green-500);
+    --paper-radio-button-unchecked-color: var(--paper-green-900);
+    --paper-radio-button-unchecked-ink-color: var(--paper-green-900);
+    --paper-radio-button-label-color: var(--paper-green-500);
+  }
+</style>
+<div *ngIf="item != null">
+  <h2>{{item.title}}</h2>
+  <div><label>ID: </label>{{item.id}}</div>
+  <div>
+    <label>Title: </label>
+    <!--<paper-input [(ngModel)]="item.title" placeholder="Title">-->
+    <paper-radio-button class="red">Radio</paper-radio-button>
+    <paper-radio-button checked class="green">Radio</paper-radio-button>
+    <!--<paper-input [(ngModel)]="item.description" placeholder="Description">-->
+  </div>
+</div>

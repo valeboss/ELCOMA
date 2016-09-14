@@ -1,7 +1,10 @@
+import 'package:polymer/polymer.dart';
+
 import 'package:angular2/platform/browser.dart';
 
-import 'package:ELCOMA/app_component.dart';
+import 'package:elcoma/app_component.dart';
 
-void main() {
+main() async{
+  await initPolymer();
   bootstrap(AppComponent);
 }

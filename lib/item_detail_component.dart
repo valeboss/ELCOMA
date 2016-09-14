@@ -1,27 +1,16 @@
+// import all necessary polymer elements
+import 'package:polymer_elements/paper_input.dart';
+import 'package:polymer_elements/paper_button.dart';
+import 'package:polymer_elements/paper_radio_button.dart';
+
 import 'package:angular2/core.dart';
 
 import 'item.dart';
 
 @Component(
   selector: 'my-item-detail',
-  //styleUrls: const ['mdl/material.min.css'],
-  template: '''
-  <div *ngIf="item != null">
-    <h2>{{item.title}}</h2>
-    <div><label>ID: </label>{{item.id}}</div>
-    <div>
-      <label>Title: </label>
-      <input [(ngModel)]="item.title" placeholder="Title">
-      <label>Description: </label>
-      <input class="mdl-textfield__input" [(ngModel)]="item.description" placeholder="Description">
-    </div>
-    <!-- Simple Textfield -->
-    <form action="#">
-      <div class="mdl-textfield mdl-js-textfield">
-        <input class="mdl-textfield__input" type="text" id="sample1">
-        <label class="mdl-textfield__label" for="sample1">Text...</label>
-      </div>
-    </form>'''
+  encapsulation: ViewEncapsulation.Native,
+  templateUrl: 'templates/item_detail.html'
 )
 class ItemDetailComponent {
   @Input()

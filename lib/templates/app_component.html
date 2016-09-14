@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let item of items_" (click)="onSelect(item)">
+    <label>Title: {{item.title}}</label>
+  </li>
+</ul>
+<my-item-detail [item]="selectedItem"></my-item-detail>

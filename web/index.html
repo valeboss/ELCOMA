@@ -3,23 +3,28 @@
     <head>
         <meta charset="utf-8">
         <title>ELCOMA Mainpage</title>
-        <!-- Javascript files -->
-        <!--<script type="text/javascript" texsrc="mdl/material.min.js" async></script>-->
-        <script> src="mdl/material.min.js"></script>
         <!-- Viewport configuration -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0", user-scalable=yes>
         <!-- Content description -->
         <meta name="description" content="A simple tool for managing datasets of electronic components.">
         <meta name="keywords" lang="en" content="electronics, components, manager">
-        <meta name="keywords" lang="de" content="Elektronk, Bauelemente, Manager">
+        <meta name="keywords" lang="de" content="Elektronik, Bauelemente, Manager">
         <!-- Cascading Style Sheets -->
-        <link rel="stylesheet" href="mdl/material.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <!-- Dart related Scripts -->
         <script defer src="main.dart" type="application/dart"></script>
         <script defer src="packages/browser/dart.js"></script>
+        <!-- Polymer should use shadow dom -->
+        <!-- Polyfill for older browsers only: <script src="packages/web_components/webcomponents.min.js"></script> -->
+        <script>
+          window.Polymer = window.Polymer || {};
+          window.Polymer.dom = 'shadow';
+        </script>
+        <!--<link rel="import" href="packages/polymer_elements/paper_radio_button.html">-->
     </head>
     <body>
         <my-app>Loading Application</my-app>
+        <!-- Javascript files -->
+        <!-- Placeholder for js files -->
     </body>
 </html>
