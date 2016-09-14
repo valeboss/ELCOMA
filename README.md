@@ -18,7 +18,9 @@ If the building process has been finished succesfully you can run the applicatio
 ```sh
 pub serve
 ```
-Browse to <localhost:8080> and the application should be already running. It is recommended to use [Dartium](https://webdev.dartlang.org/tools/dartium).
 
-## Further information
+### Run the Application
+Browse to <http://localhost:8080> and the application should be already running. It is recommended to use [Dartium](https://webdev.dartlang.org/tools/dartium).
+
+## Further Information
 This application uses the [Angular 2 Framework for Dart](https://angular.io/docs/dart/latest/quickstart.html) and [Polymer for Dart](https://www.polymer-project.org/1.0/).
