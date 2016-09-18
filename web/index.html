@@ -9,20 +9,26 @@
         <meta name="description" content="A simple tool for managing datasets of electronic components.">
         <meta name="keywords" lang="en" content="electronics, components, manager">
         <meta name="keywords" lang="de" content="Elektronik, Bauelemente, Manager">
-        <!-- Polymer should use shadow dom -->
-        <!-- Polyfill for older browsers only: <script src="packages/web_components/webcomponents.min.js"></script> -->
+        <!-- Polymer should use shadow dom. This script should be the first loaded script.  -->
+        <!-- Polyfill for older browsers only. Must be loaded before the instructions for Polymer: -->
+        <!-- <script src="packages/web_components/webcomponents.min.js"></script> -->
         <script>
           window.Polymer = window.Polymer || {};
           window.Polymer.dom = 'shadow';
+          window.Polymer.useNativeCSSProperties = true;
         </script>
         <!-- Cascading Style Sheets -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!-- normalize.css -->
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <!-- Load the styles for the Polymer Elements. -->
+        <link rel="import" href="css/polymer_styles.html">
+        <!--<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
         <!-- Dart related Scripts -->
         <script defer src="main.dart" type="application/dart"></script>
         <script defer src="packages/browser/dart.js"></script>
     </head>
-    <body>
-        <my-app>Loading Application</my-app>
+    <body class="fullbleed">
+        <my-app class="layout vertical">Loading Application</my-app>
         <!-- Javascript files -->
         <!-- Placeholder for js files -->
     </body>
