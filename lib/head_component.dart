@@ -10,6 +10,6 @@ import 'package:polymer_elements/paper_icon_button.dart';
   encapsulation: ViewEncapsulation.Native,
   templateUrl: 'templates/head_component.html'
 )
-class MyHeaderComponent {
+class MyHeadComponent {
 
 }

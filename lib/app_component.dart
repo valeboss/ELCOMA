@@ -1,6 +1,6 @@
 import 'package:angular2/core.dart';
 
-//import 'header_component.dart';
+import 'head_component.dart';
 
 import 'item.dart';
 import 'item_detail_component.dart';
@@ -9,7 +9,7 @@ import 'item_detail_component.dart';
   selector: 'my-app',
   encapsulation: ViewEncapsulation.Native,
   templateUrl: 'templates/app_component.html',
-  directives: const [ItemDetailComponent]
+  directives: const [ItemDetailComponent, MyHeadComponent]
 )
 class AppComponent {
   Item selectedItem;
