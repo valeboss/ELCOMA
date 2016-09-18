@@ -1,4 +1,6 @@
 import 'package:polymer/polymer.dart';
+import 'package:polymer_elements/iron_flex_layout_classes.dart';
+import 'package:polymer_elements/iron_icons.dart';
 
 import 'package:angular2/platform/browser.dart';
 
